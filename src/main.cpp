@@ -64,7 +64,7 @@ void loop() {
     if (c == '\n' || c == '\r') {
       if (nmeaSentence.length() > 0) {
         sentenceReady = true;
-        Serial.print("Uneta recenica: ");
+        Serial.print("Uneta rečenica: ");
         Serial.println(nmeaSentence);
       }
     } else {
