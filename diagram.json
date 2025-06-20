@@ -19,5 +19,9 @@
     [ "lcd1:SCK", "esp:18", "green", [ "v76.8", "h-124.81", "v-9.6" ] ],
     [ "lcd1:MISO", "esp:19", "green", [ "v96", "h-134.41", "v-9.6" ] ]
   ],
-  "dependencies": {}
+  "serialMonitor": {
+    "display": "always",
+    "newline": "lf",
+    "convertEol": false
+  }
 }
