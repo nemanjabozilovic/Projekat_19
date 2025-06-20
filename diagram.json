@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "author": "Nemanja Bozilovic ITS 05/24",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 9.6, "left": -311.96, "attrs": {} },
+    { "type": "wokwi-ili9341", "id": "lcd1", "top": -104.8, "left": -134.7, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "lcd1:VCC", "esp:3V3", "red", [ "v105.6", "h-297.6", "v-249.6" ] ],
+    [ "lcd1:LED", "esp:3V3", "red", [ "v86.4", "h-355.21", "v-249.6", "h48" ] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "v67.2", "h-115.2", "v-220.8" ] ],
+    [ "lcd1:CS", "esp:22", "green", [ "v48", "h-115.2", "v-172.8" ] ],
+    [ "lcd1:RST", "esp:4", "green", [ "v57.6", "h-144", "v-115.2" ] ],
+    [ "lcd1:D/C", "esp:21", "green", [ "v38.4", "h-124.8", "v-9.6" ] ],
+    [ "lcd1:MOSI", "esp:23", "green", [ "v28.8", "h-124.81", "v-163.2" ] ],
+    [ "lcd1:SCK", "esp:18", "green", [ "v76.8", "h-124.81", "v-9.6" ] ],
+    [ "lcd1:MISO", "esp:19", "green", [ "v96", "h-134.41", "v-9.6" ] ]
+  ],
+  "dependencies": {}
+}
